@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 :root {
 	--borderSize: solid 25px white;
-	--backgroundColor: #00f5d4;
+	--backgroundColor: whitesmoke;
 	--cellColor: #f15bb5;
 	--cellHoverColor: #fee440;
 	--titleColor: whtiesmoke;
@@ -33,14 +33,14 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 7px;
+	grid-gap: 8px;
 }
 
 .cell {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 120px;
+	font-size: 128px;
 	background-color: var(--cellColor);
 	border-radius: 15px;
 	transition: 0.2s;
@@ -69,8 +69,8 @@ footer,
 
 .title {
 	grid-area: title;
-	font-size: 5em;
-	font-weight: bold;
+	font-size: 80px;
+	font-weight: 900;
 	color: var(--titleColor);
 	text-shadow: 3px 4px #f15bb5;
 }
@@ -83,24 +83,24 @@ footer p {
 }
 
 .win-txt {
-	font-size: 3em;
+	font-size: 48px;
 	font-weight: bold;
 }
 
 .play-again.active {
-	font-size: 2em;
-	font-weight: bold;
+	font-size: 32px;
+	font-weight: 700;
 	padding: 10px;
 	background-color: var(--cellColor);
 	color: white;
 	transition: all 0.5s;
 	border-radius: 10px;
 	animation-iteration-count: infinite;
-	animation: example 4s infinite;
+	animation: example 6s infinite;
 }
 
 .play-again:hover {
-	transform: scale(1.2);
+	transform: scale(1.05);
 }
 
 @keyframes example {
