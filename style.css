@@ -52,6 +52,7 @@ body {
 
 .cell:hover {
 	background-color: var(--cellHoverColor);
+	box-shadow: 3px 3px 4px #9b5de5;
 }
 
 .main {
@@ -96,14 +97,15 @@ footer p {
 	transition: all 0.5s;
 	border-radius: 10px;
 	animation-iteration-count: infinite;
-	animation: example 6s infinite;
+	animation: colorful 6s infinite;
+	cursor: pointer;
 }
 
 .play-again:hover {
 	transform: scale(1.05);
 }
 
-@keyframes example {
+@keyframes colorful {
 	0% {
 		background-color: #9b5de5;
 	}
